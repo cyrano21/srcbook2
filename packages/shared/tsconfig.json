@@ -1,10 +1,21 @@
 {
   "extends": "@srcbook/configs/ts/base.json",
   "compilerOptions": {
-    "noEmit": false,
-    "allowImportingTsExtensions": false,
-    "outDir": "dist"
+    "noEmit": true,
+    "outDir": "./dist",
+    "module": "ESNext",
+    "target": "ESNext",
+    "rootDir": "./src",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "strict": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "forceConsistentCasingInFileNames": true,
+    "allowImportingTsExtensions": true
   },
-  "include": ["index.mts", "src/**/*.mts"],
+  "include": ["src/**/*.mts"],
   "exclude": ["node_modules", "dist"]
 }

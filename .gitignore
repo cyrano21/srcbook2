@@ -43,3 +43,4 @@ srcbook/lib/**/*
 *.code-workspace
 
 vite.config.ts.timestamp-*.mjs
+.codegpt

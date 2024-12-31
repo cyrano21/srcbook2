@@ -1,15 +1,13 @@
 {
   "name": "@srcbook/shared",
-  "version": "0.0.13",
+  "version": "0.0.1",
   "type": "module",
   "main": "./dist/index.mjs",
   "scripts": {
     "prebuild": "rimraf ./dist",
     "build": "tsc",
-    "dev": "tsc --incremental --watch --project .",
     "lint": "eslint . --max-warnings 0",
-    "check-types": "tsc",
-    "prepublishOnly": "npm run build"
+    "check-types": "tsc"
   },
   "dependencies": {
     "@ai-sdk/google": "1.0.1",

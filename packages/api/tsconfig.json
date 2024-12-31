@@ -4,7 +4,10 @@
     "noEmit": false,
     "allowImportingTsExtensions": false,
     "outDir": "dist",
-    "types": ["vitest/globals", "vite/client"]
+    "types": ["vitest/globals", "vite/client"],
+    "paths": {
+      "@srcbook/shared": ["../shared/dist/index.mjs"]
+    }
   },
   "include": ["**/*.mts"],
   "exclude": ["node_modules", "dist"]

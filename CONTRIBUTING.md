@@ -53,7 +53,7 @@ pnpm run check-types
 To run a script defined in one of the packages:
 
 ```shell
-pnpm run check-types --filter=@srcbook/api
+pnpm --filter @srcbook/api run check-types
 ```
 
 ### Making a changeset
@@ -77,20 +77,20 @@ To add a dependency from npm registry:
 
 ```shell
 # Add npm dependency to the API package
-pnpm add <dep> --filter api
+pnpm add <dependency> --filter @srcbook/api
 
 # Add npm dev dependency to the API package
-pnpm add -D <dep> --filter api
+pnpm add -D <dependency> --filter @srcbook/api
 ```
 
 To add a dependency from within the workspace:
 
 ```shell
 # Add the shared package to the API package.
-pnpm add @srcbook/shared --workspace --filter api
+pnpm add @srcbook/shared --workspace --filter @srcbook/api
 
 # Add the shared package as a dev dependency to the API package.
-pnpm add -D @srcbook/shared --workspace --filter api
+pnpm add -D @srcbook/shared --workspace --filter @srcbook/api
 ```
 
 To remove a package, use `remove` instead of `add` in the commands above.
